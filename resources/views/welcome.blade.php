@@ -60,8 +60,8 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a href="register.php" class="btn btn-active btn-primary mr-5">Daftar</a>
-        <a href="login.php" class="btn btn">Login</a>
+        <a href="register" class="btn btn-active btn-primary mr-5">Daftar</a>
+        <a href="login" class="btn btn">Login</a>
       </div>
     </div>
     <!-- navbar end -->
