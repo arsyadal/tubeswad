@@ -20,10 +20,10 @@
             <li>
               <a>Course</a>
             </li>
-            <li><a>News</a></li>
+            <li><a>Event & Bootcamp</a></li>
           </ul>
         </div>
-        <a href="dashboard.html">
+        <a href="dashboard">
           <img src="umkm logo.png" alt="LearnUMKM" class="btn btn-ghost text-xl text-primary h-10 w-200" />
         </a>
       </div>
@@ -31,7 +31,7 @@
         <ul class="menu menu-horizontal px-1">
           <li><a href="#" class="mr-10">Home</a></li>
           <li><a href="#" class="mr-10">Course</a></li>
-          <li><a href="#course" class="mr-10">News</a></li>
+          <li><a href="#course" class="mr-10">Event & Bootcamp</a></li>
         </ul>
       </div>
       <div class="navbar-end">
