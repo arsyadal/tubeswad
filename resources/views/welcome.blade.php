@@ -56,7 +56,7 @@
         <ul class="menu menu-horizontal px-1">
           <li><a href="#" class="mr-10">Home</a></li>
           <li><a href="#course" class="mr-10">Course</a></li>
-          <li><a href="#" class="mr-10">News</a></li>
+          <li><a href="#" class="mr-10">Event & Bootcamp</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -131,17 +131,17 @@
             <h2 class="card-title">GoOnline</h2>
             <p></p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
         <div class="card w-96 bg-base-100 shadow-xl image-full mr-5 ml-5">
           <figure><img src="kelass3.avif" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Digitalisasi</h2>
+            <h2 class="card-title">GoDigitalisasi</h2>
             <p></p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -156,9 +156,9 @@
             <div class="card-body">
               <h2 class="card-title">Mengapa pilih LearnUMKM?</h2>
               <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, veritatis.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, veritatis.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sequi.</li>
+                <li>Antarmuka Pengguna yang Ramah.</li>
+                <li>Fokus Pemberdayaan UMKM.</li>
+                <li>etualangan Pembelajaran yang Kreatif.</li>
               </ul>
               <div class="card-actions justify-end">
               </div>
@@ -180,9 +180,9 @@
           <div class="card-body">
             <h2 class="card-title">KataUMKM</h2>
             <div>
-              <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, vero soluta minus <br>
-                 delectus ullam doloribus odit error amet itaque fugit veritatis corporis nostrum! Inventore <br>
-                  cupiditate non iure laboriosam at molestiae."</p>
+              <p>"Saya sangat bersyukur bisa menggunakan aplikasi LearnUMKM ini. Sebagai pemilik usaha batik kecil dimana, 
+                aplikasi ini memberikan solusi lengkap untuk mengelola bisnis saya dengan lebih efisien. Fitur-fitur yang disediakan 
+                sangat membantu dalam meningkatkan produktivitas dan daya saing usaha saya."</p>
             </div>
          
       
@@ -230,7 +230,7 @@
           <div class="card-body">
             <h2 class="card-title">Bandung</h2>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Jl. Soekarno Hatta</p>
           </div>
           <figure><img src="Proyek Baru (6).png" alt="Shoes" /></figure>
         </div>
@@ -238,7 +238,7 @@
           <div class="card-body">
             <h2 class="card-title">Jakarta!</h2>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Jl. Soekarno Hatta, Karawang Timur</p>
           </div>
           <figure><img src="Proyek Baru (5).png" alt="Shoes" /></figure>
         </div>
@@ -246,7 +246,7 @@
           <div class="card-body">
             <h2 class="card-title">Bekasi!</h2>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Jl. Soekarno Hatta, Bekasi Barat</p>
           </div>
           <figure><img src="Proyek Baru (4).png" alt="Shoes" /></figure>
         </div>
@@ -309,23 +309,23 @@
       </aside> 
       <nav>
         <header class="footer-title">Services</header> 
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
       </nav> 
       <nav>
         <header class="footer-title">Company</header> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
       </nav> 
       <nav>
         <header class="footer-title">Legal</header> 
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
+        <a class="link link-hover"></a>
       </nav>
     </footer>
   </body>
