@@ -17,10 +17,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('namaUMKM');
-            $table->string('jenisUMKM');
-            $table->string('skalaUMKM');
-            $table->string('nomorUMKM');
+            $table->string('namaUMKM')->nullable();
+            $table->string('jenisUMKM')->nullable();
+            $table->string('skalaUMKM')->nullable();
+            $table->string('nomorUMKM')->nullable();
+            $table->string('courseType')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

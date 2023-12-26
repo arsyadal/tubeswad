@@ -48,7 +48,7 @@ class RegisteredUserController extends Controller
             'jenisUMKM' => $request->jenisUMKM,
             'skalaUMKM' => $request->skalaUMKM,
             'nomorUMKM' => $request->nomorUMKM,
-        ]);
+        ])->assignRole('user');
 
         event(new Registered($user));
 
