@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Kuisioner;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
@@ -36,85 +35,6 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
         ])->assignRole('admin');
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session One'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session One'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session One'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session One'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Two'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Three'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Three'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Three'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Three'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
-        Kuisioner::create([
-            'question' => 'Are you sure you want to',
-            'questionType' => 'Session Four'
-        ]);
+        
     }
 }
