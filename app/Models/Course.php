@@ -16,4 +16,17 @@ class Course extends Model
         'file',
         'sertifikat',
     ];
+
+    public function coursemoduls(){
+        return $this->hasMany(CourseModul::class);
+    }
+
+    public static function boot() {
+        parent::boot();
+        self::deleting(function($modul) {
+            $modul->coursemoduls()->each(function($coursemoduls){
+                $coursemoduls->delete();
+            });
+        });
+    }
 }
