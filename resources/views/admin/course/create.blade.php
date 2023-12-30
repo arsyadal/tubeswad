@@ -1,6 +1,9 @@
 <x-app-layout>
     <div class="py-12 px-10 text-gray-700">
         <h1 class="text-xl font-bold">Tambah Courses</h1>
+        <p><a href="{{ route('admin.course') }}">Course</a> / <a href="{{ route('admin.course.detail', $courseCategory->id)  }}">
+            {{ $courseCategory->name }}</a> / Create</p>
+
         <form action="{{ route('admin.course.store') }}" method="post" enctype="multipart/form-data" class="rounded-lg bg-[#133256] p-5 mt-5">
             @csrf
             <input type="hidden" name="category_id" value="{{ $courseCategory->id }}">

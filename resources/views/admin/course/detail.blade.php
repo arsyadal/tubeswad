@@ -3,14 +3,15 @@
         <div class="flex justify-between items-center">
             <h1 class="text-xl font-bold">List Course {{ $courseCategory->name }}</h1>
             <a href="{{ route('admin.course.create', $courseCategory->id) }}" class="btn flex items-center gap-x-2">
-                <p>Create Modul</p>
+                <p>Create Course</p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 h-8">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                </svg>
-            </a>
-        </div>
+                stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </a>
+    </div>
+    <p><a href="{{ route('admin.course') }}">Course</a> / <a href="{{ route('admin.course.detail', $courseCategory->id)  }}">{{ $courseCategory->name }}</a></p>
         <div class="grid grid-cols-3 gap-5 mt-5">
             @foreach($course as $data)
             <div class="card bg-base-100 shadow-xl">
