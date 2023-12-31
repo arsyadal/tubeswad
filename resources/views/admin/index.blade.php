@@ -31,14 +31,31 @@
                             <path
                                 d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
                         </svg>
-
                         {{ $pending }} Pending
                     </button>
                 </div>
+                <div class="border-2 bg-[#D9D9D9] p-4 mt-5 text-gray-700">
+                    <h1 class="font-bold text-xl">Event</h1>
+                </div>
             </div>
             <div class="w-10/12">
-                
-            </div>
-        </div>
-    </div>
+                <div class="border-2 bg-white text-gray-700 p-4">
+                    <h1 class="font-bold text-2xl">Perkembangan LearnUMKM</h1>
+                    <div class="flex flex-col gap-y-4 w-full mt-3">
+                        <div class="flex justify-between gap-x-3 items-center">
+                            <progress class="progress w-full h-10 progress-primary" value="0" max="100"></progress>
+                            <p class="font-bold text-2xl w-2/12 text-right">Go Online</p>
+                        </div>
+                        <div class="flex justify-between gap-x-3 items-center">
+                            <progress class="progress w-full h-10 progress-primary" value="10" max="100"></progress>
+                            <p class="font-bold text-2xl w-2/12 text-right">Go Modern</p>
+                        </div>
+                        <div class="flex justify-between gap-x-3 items-center">
+                            <progress class="progress w-full h-10 progress-primary" value="40" max="100"></progress>
+                            <p class="font-bold text-2xl w-2/12 text-right">Go Global</p>
+                        </div>
+                    </div>
+                </div>
+                                    @endforeach
+        
 </x-app-layout>
