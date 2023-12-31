@@ -47,8 +47,25 @@ Route::middleware('auth')->group(function () {
         Route::get('/course', [CourseController::class, 'index'])->name('course');
         Route::get('/course/{idCourseCategory}', [CourseController::class, 'detail'])->name('course.detail');
         Route::get('/course/detail/{courseId}', [CourseController::class, 'detailCourse'])->name('course.detailCourse');
+        Route::get('/course/edit/{id}', [CourseController::class, 'edit'])->name('course.edit');
+        Route::patch('/course/update/{id}', [CourseController::class, 'update'])->name('course.update');
+        Route::delete('/course/delete/{id}', [CourseController::class, 'destroy'])->name('course.delete');
         Route::get('/course/create/{idCourseCategory}', [CourseController::class, 'create'])->name('course.create');
-        Route::post('/course/store', [CourseController::class, 'store'])->name('course.store');
+        Route::post('/course/store', [CourseController::class, 'store'])->name('course.store'); 
+
+        Route::get('/course/modul/create/{id}', [ModulController::class, 'create'])->name('modul.create');
+        Route::post('/course/modul/store', [ModulController::class, 'store'])->name('modul.store');
+        Route::post('/course/modul/update/{id}', [ModulController::class, 'update'])->name('modul.update');
+        Route::delete('/course/modul/delete/{id}', [ModulController::class, 'destroy'])->name('modul.delete');
+
+        Route::get('/course/modul/question/create/{id}', [ModulController::class, 'questionCreate'])->name('modul.question.create');
+        Route::post('/course/modul/question/store', [ModulController::class, 'questionStore'])->name('modul.question.store');
+        Route::get('/course/modul/question/edit/{id}', [ModulController::class, 'questionEdit'])->name('modul.question.edit');
+        Route::patch('/course/modul/question/update/{id}', [ModulController::class, 'questionUpdate'])->name('modul.question.update');
+        Route::delete('/course/modul/question/delete/{id}', [ModulController::class, 'questionDestroy'])->name('modul.question.delete');
+
+        Route::get('/event-bootcamp', [EventBootcampController::class, 'index'])->name('eventBootcamp');
+        Route::get('/event-bootcamp/{category}', [EventBootcampController::class, 'detail'])->name('eventBootcamp.detail');
 
         Route::get('/kuisioner', [AdminController::class, 'kuisioner'])->name('kuisioner');
         Route::post('/kuisioner/add/{type}', [AdminController::class, 'addKuisioner'])->name('kuisionerAdd');
