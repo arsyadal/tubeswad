@@ -18,7 +18,7 @@ class Course extends Model
     ];
 
     public function coursemoduls(){
-        return $this->hasMany(CourseModul::class);
+        return $this->hasMany(CourseModul::class, 'course_id');
     }
 
     public static function boot() {
