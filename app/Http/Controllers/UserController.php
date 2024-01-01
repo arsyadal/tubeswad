@@ -38,8 +38,10 @@ class UserController extends Controller
             $categoryValue+= $data->progress;
             $categoryActivities++;
         }
-
-        $categoryProgress = $categoryValue / $categoryActivities;
+        $categoryProgress = 0;
+        if($categoryActivities > 0){
+            $categoryProgress = $categoryValue / $categoryActivities;
+        }
 
         return view('user.index', compact('courseCategory', 'course', 'categoryProgress'));
     }
@@ -60,7 +62,10 @@ class UserController extends Controller
                     $data->allActivities++;
                 }
             }
-            $data->progress = ($data->checked / $data->allActivities) * 100;
+            $data->progress = 0;
+            if($data->allActivities > 0){
+                $data->progress = ($data->checked / $data->allActivities) * 100;
+            }
         }
 
         return view('user.course', compact('courseCategory', 'course'));
@@ -89,7 +94,10 @@ class UserController extends Controller
                 }
             }
         }
-        $progressCourse = ($checked / $totalActivities) * 100;
+        $progressCourse = 0;
+        if($totalActivities > 0){
+            $progressCourse = ($checked / $totalActivities) * 100;
+        }
 
         return view('user.courseModul', compact('course', 'courseCategory', 'modul', 'peserta', 'videoCount', 'progressCourse'));
     }

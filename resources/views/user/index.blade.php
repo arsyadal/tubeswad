@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-sm rounded-lg">
                 <div class="p-6 text-gray-900">
                     <h1 class="text-2xl font-bold text-[#133256]"> Halo, {{ auth()->user()->name }}!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Hai Selamat datang di course LearnUMKM</p>
                 </div>
             </div>
             <div class="flex gap-x-5 text-white mt-5">
@@ -14,7 +14,7 @@
                             <p class="font-bold text-xl">{{ auth()->user()->courseType }}</p>
                             <p>{{ auth()->user()->namaUMKM }}</p>
                         </div>
-                        <div class="radial-progress" style="--value:70;" role="progressbar">70%</div>
+                        <div class="radial-progress" style="--value:{{$categoryProgress}};" role="progressbar">{{$categoryProgress}}%</div>
                     </div>
                     <div class="bg-white p-5 shadow-sm rounded-lg text-gray-700 mt-5">
                         <h1 class="font-bold text-xl">Timeline</h1>
@@ -24,7 +24,7 @@
                 <div class="w-4/6">
                     <div class="bg-[#00164E] p-5 shadow-sm rounded-lg">
                         <h1 class="font-bold text-xl">Courses</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Berikut List Course yang akan dipelajari!</p>
                         <div class="flex items-center w-full bg-[#DCE1FF] rounded-md px-2 mt-2">
                             <input type="text" class="bg-transparent w-full border-0 focus:ring-0 text-black">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -45,7 +45,7 @@
                                     <p>Pemateri: {{ $data->namaPemateri }}</p>
                                     <p>{{substr($data->deskripsi, 0, 70) . '   ...'}}</p>
                                     <div class="card-actions flex items-center">
-                                        <progress class="progress progress-info w-11/12" value="42" max="100"></progress><p class="text-sm font-medium">42%</p>
+                                        <progress class="progress progress-info w-11/12" value="{{ $data->progress }}" max="100"></progress><p class="text-sm font-medium">{{ $data->progress }}%</p>
                                     </div>
                                 </div>
                             </div>

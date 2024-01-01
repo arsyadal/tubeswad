@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="flex justify-center items-center gap-x-5 mt-5">
-            <progress class="progress progress-info " value="40" max="100"></progress>
+            <progress class="progress progress-info " value="{{ $progressCourse }}" max="100"></progress>
             <label for="sertifikatModal" class="mx-auto btn bg-[#AC8039] text-white border-0">Unduh Sertikat</label>
         </div>
 
@@ -115,9 +115,32 @@
                             @endif
                             <p>{{ $question->modulType }} {{ $data->modul_name }}</p>
                         </a>
-                        <div class="flex items-center gap-x-2">
-                            <input type="checkbox" class="checkbox border-2" />
+                        @csrf
+                        <!-- The button to open modal -->
+                        @if($question->progress == "checked")
+                        <div class="checkbox" checked aria-checked="true"></div>
+                        @elseif($question->progress == "unchecked")
+                        <label for="progressModal{{ $question->id }}" class="checkbox"></label>
+
+                        <!-- Put this part before </body> tag -->
+                        <input type="checkbox" id="progressModal{{ $question->id }}" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box bg-white">
+                                <h3 class="font-bold text-lg text-center">Warning!</h3>
+                                <form action="{{ route('user.activitiesProgress', $question->id) }}" method="post">
+                                    @csrf
+                                    <p class="py-4 text-center">Are you sure, you want to check this activitiies
+                                        progress?</p>
+                                    <div class="modal-action flex items-center justify-center gap-x-5">
+                                        <label for="progressModal{{ $question->id }}" class="btn">Close!</label>
+                                        <button type="submit"
+                                            class="btn bg-[#02873d] hover:bg-[#18412a] text-white border-0">Yes, I'm
+                                            sure</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
+                        @endif
                     </div>
                     @endforeach
                 </div>

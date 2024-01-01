@@ -16,8 +16,8 @@
                             <p>Pemateri: {{ $data->namaPemateri }}</p>
                             <p>{{substr($data->deskripsi, 0, 70) . '   ...'}}</p>
                             <div class="card-actions flex items-center justify-between">
-                                <progress class="progress progress-info w-10/12" value="42" max="100"></progress>
-                                <p class="text-sm font-medium w-1/12">42%</p>
+                                <progress class="progress progress-info w-10/12" value="{{ $data->progress }}" max="100"></progress>
+                                <p class="text-sm font-medium w-1/12">{{ $data->progress }}%</p>
                             </div>
                         </div>
                     </div>

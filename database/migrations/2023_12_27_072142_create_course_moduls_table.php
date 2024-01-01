@@ -18,9 +18,9 @@ return new class extends Migration
             $table->bigInteger('course_category_id')->unsigned();
             $table->foreign('course_category_id')->references('id')->on('course_categories')->onDelete('cascade');
             $table->string('modul_name');
-            $table->enum('modul_type', ['presentation', 'materi', 'foto/video', 'test']);
-            $table->text('materi');
-            $table->string('file');
+            $table->string('forum');
+            // $table->enum('modul_type', ['presentation', 'materi', 'foto/video', 'test']);
+            // $table->text('materi');
             $table->timestamps();
         });
     }
